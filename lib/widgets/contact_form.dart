@@ -1,8 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:portfolio/widgets/portfolio_text_form_field.dart';
 
+import '../constants/border_styles.dart';
+import '../constants/colors.dart';
 import '../constants/constants.dart';
 import '../constants/image_paths.dart';
 import '../constants/text_logs.dart';
@@ -14,6 +15,7 @@ class ContactForm extends GetView<FormFieldsController> {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
     return Form(
       key: controller.formKey,
       autovalidateMode: AutovalidateMode.disabled,
@@ -44,28 +46,6 @@ class ContactForm extends GetView<FormFieldsController> {
               return null;
             },
           ),
-          PortfolioTextFormField(
-            controller: controller.projectTypeController,
-            labelText: 'Project Type',
-            hintText: 'Select project type',
-            validator: (v) {
-              if (v!.isEmpty) {
-                return '';
-              }
-              return null;
-            },
-          ),
-          PortfolioTextFormField(
-            controller: controller.projectBudgetController,
-            labelText: 'Project Budget',
-            hintText: 'Select project budget',
-            validator: (v) {
-              if (v!.isEmpty) {
-                return ' ';
-              }
-              return null;
-            },
-          ),
           SizedBox(
             child: TextFormField(
               controller: controller.messageController,
@@ -78,7 +58,13 @@ class ContactForm extends GetView<FormFieldsController> {
                 return null;
               },
               decoration: InputDecoration(
-                labelText: 'Description',
+                enabledBorder: theme.brightness == Brightness.light
+                    ? outlineInputBorder
+                    : outlineInputBorderDark,
+                focusedBorder: theme.brightness == Brightness.light
+                    ? outlineInputBorder
+                    : outlineInputBorderDark,
+                labelText: 'Message Me',
                 hintText: 'Write some message',
               ),
             ),
@@ -94,12 +80,9 @@ class ContactForm extends GetView<FormFieldsController> {
                   FocusScope.of(context).unfocus();
                   controller.submitFormValues();
                   controller.uploadDatatoFirestore(
-                    controller.nameController.text,
-                    controller.emailController.text,
-                    controller.projectTypeController.text,
-                    controller.projectBudgetController.text,
-                    controller.messageController.text,
-                  );
+                      controller.nameController.text,
+                      controller.emailController.text,
+                      controller.messageController.text);
                 },
               ),
             ),

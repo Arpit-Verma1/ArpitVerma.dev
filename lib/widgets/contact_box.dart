@@ -44,16 +44,16 @@ class ContactBox extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SocialCard(
-                iconSrc: iconPicWhatsApp,
-                name: 'Arpit Verma',
+                iconSrc: iconPicCodolio,
+                name: 'Arpit Verma - Codolio',
                 color: Color(0xFFD9FFFC),
-                press: () => launchURLs(whatsAppLink),
+                press: () => launchURLs(codolioLink),
               ),
               SocialCard(
-                iconSrc: iconPicTwitter,
+                iconSrc: iconPicLinkedIn,
                 name: 'Arpit Verma',
                 color: Color(0xFFE4FFC7),
-                press: () => launchURLs(twitterLink),
+                press: () => launchURLs(linkedInLink),
               ),
               SocialCard(
                 iconSrc: iconPicGithub,

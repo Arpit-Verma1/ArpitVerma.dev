@@ -145,10 +145,10 @@ class _PortfolioDrawerState extends State<PortfolioDrawer> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       SmallSocialCard(
-                        iconSrc: iconPicTwitter,
+                        iconSrc: iconPicLinkedIn,
                         color: Color(0xFFE4FFC7),
                         size: 25,
-                        press: () => launchURLs(twitterLink),
+                        press: () => launchURLs(linkedInLink),
                       ),
                       SizedBox(width: kDefaultPadding),
                       SmallSocialCard(

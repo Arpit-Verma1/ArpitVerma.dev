@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../../constants/image_paths.dart';
 import '../../constants/text_logs.dart';
 import '../../controllers/scrolling_controller.dart';
@@ -101,7 +102,9 @@ class AboutSection extends StatelessWidget {
                       width: 200,
                       text: 'Download \n   my CV',
                       imageSrc: iconDownloadPic,
-                      press: () {}, //TODO: CV url
+                      press: () {
+                        launchUrl(Uri.parse(resumeLink));
+                      }, //TODO: CV url
                     ),
                     SizedBox(width: kDefaultPadding * 1 * 5),
                   ],
@@ -120,7 +123,9 @@ class AboutSection extends StatelessWidget {
                       width: 175,
                       text: 'Download \n   my CV',
                       imageSrc: iconDownloadPic,
-                      press: () {}, //TODO: CV url
+                      press: () {
+                        launchUrl(Uri.parse(resumeLink));
+                      }, //TODO: CV url
                     ),
                   ],
                 ),

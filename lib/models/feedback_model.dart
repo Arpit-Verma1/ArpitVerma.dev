@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../constants/image_paths.dart';
-import '../constants/text_logs.dart';
 
 class Feedback {
   final String name, review, userPic, profile;

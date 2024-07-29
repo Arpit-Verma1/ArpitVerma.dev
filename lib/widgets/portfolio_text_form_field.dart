@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants/colors.dart';
+
+import '../constants/border_styles.dart';
 
 class PortfolioTextFormField extends StatelessWidget {
   const PortfolioTextFormField({
@@ -15,6 +18,7 @@ class PortfolioTextFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
     return SizedBox(
       width: 400,
       child: TextFormField(
@@ -23,6 +27,24 @@ class PortfolioTextFormField extends StatelessWidget {
         decoration: InputDecoration(
           labelText: labelText,
           hintText: hintText,
+          enabledBorder: theme.brightness == Brightness.light
+              ? outlineInputBorder
+              : outlineInputBorderDark,
+          focusedBorder: theme.brightness == Brightness.light
+              ? outlineInputBorder
+              : outlineInputBorderDark,
+          helperStyle: TextStyle(
+              color: theme.brightness == Brightness.light
+                  ? textColorLightTheme
+                  : textColorDarkTheme),
+          labelStyle: TextStyle(
+              color: theme.brightness == Brightness.light
+                  ? textColorLightTheme
+                  : textColorDarkTheme),
+          hintStyle: TextStyle(
+              color: theme.brightness == Brightness.light
+                  ? textColorLightTheme
+                  : textColorDarkTheme),
         ),
       ),
     );

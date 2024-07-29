@@ -1,4 +1,3 @@
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
@@ -67,10 +66,26 @@ class _MouseMagnetState extends State<MouseMagnet> {
                 duration: magnetMouseAnimationDuration,
                 child: AnimatedContainer(
                   duration: magnetMouseAnimationDuration,
-                  height: isOut ? 0 : 15,
-                  width: isOut ? 0 : 15,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(image: AssetImage(flutter))),
+                  height: isOut ? 0 : 25,
+                  width: isOut ? 0 : 25,
+                  // decoration: BoxDecoration(
+                  //     image: DecorationImage(image: AssetImage(flutter))),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/cursor.png'),
+                        fit: BoxFit.cover,
+                      ),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.white.withOpacity(0.5),
+                          spreadRadius: 10,
+                          blurRadius: 10,
+                        ),
+                      ],
+                    ),
+                  ),
                 ),
               ),
             ],

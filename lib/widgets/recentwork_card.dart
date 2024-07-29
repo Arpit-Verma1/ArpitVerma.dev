@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/recentwork_model.dart';
 import '../constants/colors.dart';
@@ -98,8 +99,12 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
                     ),
                     SizedBox(height: kDefaultPadding),
                     Expanded(
-                      child: Text('View Details',
-                          style: recentworkcardText3TextStyle),
+                      child: InkWell(
+                        onTap: () =>
+                            launchURLs(recentWorks[widget.index].projectUrl),
+                        child: Text('View Details',
+                            style: recentworkcardText3TextStyle),
+                      ),
                     ),
                     SizedBox(height: kDefaultPadding * .5),
                   ],

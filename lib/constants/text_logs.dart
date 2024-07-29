@@ -1,15 +1,20 @@
 const String emailRegExp =
     r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+";
 
-const String lovemoji = '\u{1F499}'; // U+1F499
+const String lovemoji = '\u{2764}\u{FE0F}'; // U+1F499
 
 const String whatsAppLink = "https://wa.me/9180774875551";
 
-const String twitterLink = 'https://twitter.com/';
+const String linkedInLink = 'https://www.linkedin.com/in/arpit-verma1/';
 
-const String githubLink = 'https://github.com/Arpit-Verma1/ArpitVerma.dev';
+const String githubLink = 'https://github.com/Arpit-Verma1/';
+
+const String codolioLink = 'https://codolio.com/profile/arpit';
 
 const String gitHubRepoLink = 'https://github.com/Arpit-Verma1/ArpitVerma.dev';
+
+const String resumeLink =
+    'https://drive.google.com/file/d/1XYNsi0SlniMTblC5YuOxO14eul_RWWFU/view?usp=sharing';
 
 final String myEmail = 'arpitv747@gmail.com';
 
@@ -22,9 +27,9 @@ final String body = '';
 
 const List<String> titlesText = [
   'Flutter Developer',
-  'iOS Developer',
-  'Mobile App Developer',
-  'Flutter Developer',
+  'Giving Life to Ideas'
+      'iOS Developer',
+  'Developing with Dedication'
 ];
 
 const String aboutMeTexta =
@@ -35,3 +40,8 @@ const String aboutMeTextb =
 const String recentWorksText1 =
     ' Utilized QR codes to efficiently track student movements';
 const String recentWorksText2 = 'Share, Network and Apply Opportunities';
+
+const String recentWorksText3 =
+    'Social networking platform for health and well-being';
+const String recentWorksText4 =
+    'Redefining social media for growth and meaningful connections.';

@@ -27,7 +27,9 @@ class _ServiceCardState extends State<ServiceCard> {
           horizontal:
               ResponsiveWidget.isLargeScreen(context) ? 0 : kDefaultPadding),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          launchURLs(services[widget.index].companyUrl);
+        },
         onHover: (v) {
           setState(() {
             isHover = v;

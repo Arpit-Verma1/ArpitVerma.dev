@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "268539466155",
+    "project_id": "portfolio-bd7da",
+    "storage_bucket": "portfolio-bd7da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:268539466155:android:4562ebd04201de9100c2ee",
+        "android_client_info": {
+          "package_name": "com.arpit.arpit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqEe-STIf4fbHOFKKrZw_ndPSbKJ1iktk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
