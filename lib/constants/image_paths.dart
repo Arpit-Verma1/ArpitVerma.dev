@@ -1,4 +1,4 @@
-const String personaPic = 'assets/images/Arpit_Profile1.png';
+const String personaPic = 'assets/images/speaker.png';
 
 const String signaturePic = 'assets/images/sign.png';
 const String signaturePicWhite = 'assets/images/sign_white.png';
@@ -26,8 +26,16 @@ const String recentWorksPic1 = 'assets/images/work1.png';
 const String recentWorksPic2 = 'assets/images/work2.png';
 const String recentWorksPic3 = 'assets/images/work3.png';
 const String recentWorksPic4 = 'assets/images/work4.png';
+const String recentWorksPic5 = 'assets/images/work5.png';
+const String recentWorksPic6 = 'assets/images/work6.png';
 
-const List<String> feedBacksPicList = ["mannat.jpg", "piyush.jpg", "alok.jpg"];
+const List<String> feedBacksPicList = [
+  "mannat.jpg",
+  "saiTeja.jpg",
+  "piyush.jpg",
+  "harish.jpg",
+  "alok.jpg",
+];
 
 const String iconDownloadPic = 'assets/images/download.png';
 const String iconHandPic = 'assets/images/hand.png';

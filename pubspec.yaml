@@ -32,7 +32,7 @@ dependencies:
     sdk: flutter
   animated_text_kit: ^4.2.2
   auto_animated: ^3.0.1
-  carousel_slider: ^4.0.0-nullsafety.0
+  carousel_slider: ^5.0.0
   cloud_firestore: ^5.1.0
   cupertino_icons: ^1.0.2
   draggable_scrollbar: ^0.1.0

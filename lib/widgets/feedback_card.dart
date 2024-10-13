@@ -37,7 +37,7 @@ class _FeedBackCardState extends State<FeedBackCard> {
         child: AnimatedContainer(
           duration: hoverAnimationDuration,
           height: 460,
-          width: 350,
+          width: 320,
           padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
           margin: EdgeInsets.only(top: kDefaultPadding * 3),
           decoration: BoxDecoration(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/recentwork_model.dart';
 import '../constants/colors.dart';
@@ -92,7 +91,7 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
                         fontFamily: 'Helvetica Now Display',
                         fontWeight: FontWeight.w400,
                         fontSize:
-                            ResponsiveWidget.isSmallScreen(context) ? 25 : 28,
+                            ResponsiveWidget.isSmallScreen(context) ? 20 : 22,
                         letterSpacing: -.3,
                         color: kTextColor,
                       ),

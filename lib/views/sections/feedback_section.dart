@@ -25,11 +25,14 @@ class FeedBackSection extends StatelessWidget {
           ),
           SizedBox(height: kDefaultPadding),
           ResponsiveWidget.isLargeScreen(context)
-              ? Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: List.generate(
-                    feedBacks.length,
-                    (index) => FeedBackCard(index: index),
+              ? Container(
+                  height: MediaQuery.of(context).size.height * .85,
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return FeedBackCard(index: index);
+                    },
+                    itemCount: feedBacks.length,
+                    scrollDirection: Axis.horizontal,
                   ),
                 )
               : SingleChildScrollView(

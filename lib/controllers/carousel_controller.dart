@@ -1,16 +1,17 @@
-import 'package:carousel_slider/carousel_slider.dart';
+import 'package:carousel_slider/carousel_controller.dart';
+import 'package:carousel_slider/carousel_options.dart';
 import 'package:get/get.dart';
 
 import '../constants/constants.dart';
 
-class CarouseLController extends GetxController {  
-static final carouselCtrl = Get.find<CarouseLController>();
+class CarouseLController extends GetxController {
+  static final carouselCtrl = Get.find<CarouseLController>();
 
-  CarouselController slideController = CarouselController();
+  CarouselSliderController slideController = CarouselSliderController();
 
   @override
   void onInit() {
-    slideController = CarouselController();
+    slideController = CarouselSliderController();
     super.onInit();
   }
 

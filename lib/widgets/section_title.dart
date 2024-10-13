@@ -64,6 +64,7 @@ class SectionTitle extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                     fontSize: 14,
                     letterSpacing: 1,
+                    overflow: TextOverflow.visible,
                     color: theme.brightness == Brightness.light
                         ? kTextColor
                         : kTextColor,
@@ -74,7 +75,7 @@ class SectionTitle extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Helvetica Now Display',
                     fontWeight: FontWeight.w800,
-                    fontSize: ResponsiveWidget.isLargeScreen(context) ? 50 : 35,
+                    fontSize: ResponsiveWidget.isLargeScreen(context) ? 50 : 25,
                     letterSpacing: -.7,
                     color: theme.brightness == Brightness.light
                         ? kPitchDark

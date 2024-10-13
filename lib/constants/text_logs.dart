@@ -39,9 +39,13 @@ const String aboutMeTextb =
 
 const String recentWorksText1 =
     ' Utilized QR codes to efficiently track student movements';
-const String recentWorksText2 = 'Share, Network and Apply Opportunities';
-
+const String recentWorksText2 =
+    'Real-time cryptocurrency tracking and portfolio management with seamless Swift integration.  ';
 const String recentWorksText3 =
+    'Redefining jewelry e-tailing with elegance, ease, and a seamless shopping experience.';
+const String recentWorksText4 = 'Share, Network and Apply Opportunities';
+
+const String recentWorksText5 =
     'Social networking platform for health and well-being';
-const String recentWorksText4 =
+const String recentWorksText6 =
     'Redefining social media for growth and meaningful connections.';

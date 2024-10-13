@@ -26,22 +26,36 @@ List<RecentWork> recentWorks = [
   RecentWork(
       id: 2,
       title: recentWorksText2,
-      category: 'Plutonn',
+      category: 'CryptoNest',
       image: recentWorksPic2,
       projectUrl:
-          'https://play.google.com/store/apps/details?id=com.plutonn.plutonn'),
+          'https://github.com/Arpit-Verma1/100-days-of-IOS/tree/master/CryptoNest'),
   RecentWork(
-      id: 1,
+      id: 3,
       title: recentWorksText3,
-      category: 'Walnut',
+      category: 'Jwelease',
       image: recentWorksPic3,
+      projectUrl: 'https://github.com/Arpit-Verma1/jewlease'),
+  RecentWork(
+      id: 4,
+      title: recentWorksText4,
+      category: 'Plutonn',
+      image: recentWorksPic4,
+      projectUrl:
+          'https://play.google.com/store/apps/details?id=com.plutonn.plutonn'),
+
+  RecentWork(
+      id: 5,
+      title: recentWorksText5,
+      category: 'Plutonn',
+      image: recentWorksPic5,
       projectUrl:
           'https://play.google.com/store/apps/details?id=com.walnut.walnut_app'),
   RecentWork(
-      id: 2,
-      title: recentWorksText4,
+      id: 6,
+      title: recentWorksText6,
       category: 'While',
-      image: recentWorksPic4,
+      image: recentWorksPic6,
       projectUrl:
           'https://play.google.com/store/apps/details?id=com.while.while_app'),
 ];

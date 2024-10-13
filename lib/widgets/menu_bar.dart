@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:portfolio/widgets/responsive_widget.dart';
 
@@ -23,7 +22,7 @@ class _MenuBarState extends State<MenuBar> {
   List<String> menuItems = [
     'Home',
     'About',
-    'Services',
+    'Experience',
     'Portfolio',
     'Testimonial',
     'Contact',
@@ -78,7 +77,7 @@ class _MenuBarState extends State<MenuBar> {
           setState(() {
             selectedIndex = i;
           });
-          Obx(scrollcontroller.scrollTo(context, i));
+          Obx(scrollcontroller.scrollTo(context, i <= 3 ? i : i + 1));
         },
         onHover: (v) {
           setState(() {
