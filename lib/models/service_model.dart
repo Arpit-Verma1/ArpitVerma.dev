@@ -19,22 +19,32 @@ class Service {
 }
 
 List<Service> services = [
+
   Service(
-      'CipherSchools',
+      'LikeMinds',
       servicePic1,
-      'Full Stack Mobile Dev',
-      'Feb 2024 - Present',
+      'iOS Developer',
+      'Apr 2025 - Present',
       1,
       Color(0xFFD9FFFC),
+      'https://www.likeminds.community/'),
+  Service(
+      'CipherSchools',
+      servicePic2,
+      'Mobile Application Developer',
+      'Feb 2024 - March 2025',
+      2,
+      Color(0xFFD9FFFC),
       'https://www.cipherschools.com/'),
-  Service('While Network Pvt', servicePic2, 'Mobile App Developer',
-      'May 2024 - Present', 2, Color(0xFFE4FFC7), 'https://walnuthealth.club/'),
+  Service('While Network Pvt', servicePic3, 'Mobile App Developer',
+      'May 2024 - Sept 2024', 3, Color(0xFFE4FFC7), 'https://www.linkedin.com/company/while-network-private-limited/'),
   Service(
       'Walnut Health',
-      servicePic3,
+      servicePic4,
       'Flutter Developer',
       'Sep 2023 - Nov 2023',
-      3,
+      4,
       Color(0xFFFFF3DD),
-      'https://www.linkedin.com/company/while-network-private-limited/'),
+      'https://walnuthealth.club/'
+      ),
 ];

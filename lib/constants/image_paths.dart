@@ -18,9 +18,11 @@ const String landingImage1 = 'assets/images/landing_image1.jpg';
 const String landingImage2 = 'assets/images/landing_image2.jpg';
 const String landingImage3 = 'assets/images/landing_image3.jpg';
 
-const String servicePic1 = 'assets/images/cipherSchools.png';
-const String servicePic2 = 'assets/images/while.png';
-const String servicePic3 = 'assets/images/walnutHealth.png';
+const String servicePic1 = 'assets/images/likeminds.jpeg';
+const String servicePic2 = 'assets/images/cipherSchools.png';
+const String servicePic3 = 'assets/images/while.png';
+const String servicePic4 = 'assets/images/walnutHealth.png';
+
 
 const String recentWorksPic1 = 'assets/images/work1.png';
 const String recentWorksPic2 = 'assets/images/work2.png';
@@ -31,9 +33,12 @@ const String recentWorksPic6 = 'assets/images/work6.png';
 
 const List<String> feedBacksPicList = [
   "mannat.jpg",
+  "akshat.jpeg",
+  'aman.jpeg',
   "saiTeja.jpg",
   "piyush.jpg",
   "harish.jpg",
+  "raunak.jpeg",
   "alok.jpg",
 ];
 
